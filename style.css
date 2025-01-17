@@ -1,0 +1,289 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", serif;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+body{
+    position: relative;
+    margin-top: 3rem; /*  to prevent body flowing under fixed navbar   */
+}
+
+/* NAV BAR */
+nav {
+    font-size: 0.6rem;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 1rem;
+    gap: 0.5rem;
+    text-transform: uppercase;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+    font-size: 0.8rem;
+}
+
+nav i{
+    margin: auto auto;
+    padding: 0 0.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN */
+
+/* MAIN - HERO */
+
+.hero-img{
+    padding: 0 3vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/blog1.jpg");
+    background-size: cover;
+}
+
+.hero-date{
+    padding-top: 7rem;
+}
+
+.hero-text-container{
+    color: whitesmoke;
+    padding: 1rem 1rem;
+    text-shadow:
+    0.3px 0.3px 1px #000,
+    -0.3px 0.3px 1px #000,
+    -0.3px -0.3px 0 #000,
+    0.3px -0.3px 0 #000;
+    padding-bottom: 3rem;
+}
+
+/* MAIN - SINGLE BLOGS SECTION */
+.small-screen-six-blogs {
+    /* background-color: whitesmoke; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.single-blog-container{
+margin: 2rem 1rem;
+}
+
+.main-grid{
+    margin: 0   3vw;
+}
+
+main p {
+    margin: 0 0;
+}
+
+main img{
+    width: 100%;
+    height: 250px;
+
+    
+}
+
+.single-blog-date{
+    margin: 0.7rem 0;
+}
+
+article header{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin: 0 0;
+}
+
+article img{
+    border-radius: 3px;
+}
+
+.single-blog-text{
+    margin-top: 0.4rem;
+}
+
+.view-more {
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.view-more-2 {
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: bolder;
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.big-screen-six-blogs{
+    display: none;
+}
+
+
+@media only screen and (min-width: 480px) {
+
+    .hero-date{
+        padding-top: 13rem;
+    }
+
+    .hero-text-container{
+        width: 65%;
+    }
+
+    .small-screen-six-blogs {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "b1 b2 b3"
+    }
+
+    .view-more {
+        display: none;
+    }
+
+    .big-screen-six-blogs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .view-more-2 {
+        display: block;
+    }
+
+}
+
+
+/* FOOTER */
+footer {
+    display: block;
+    margin: 0 auto;
+    color: whitesmoke;
+    background-color: black;
+    padding: 2rem 0;
+}
+
+footer p{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* SECONDARY INDEXES */
+
+/* HERO INDEX HTML */
+.recent-posts{
+    font-weight: 900;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.main-hero-article{
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding: 1rem;
+}
+
+.p1-date{
+    margin-top: 2rem;
+}
+
+.p1{
+    margin-bottom: 2.5rem;
+}
+
+.main-hero-article h1{
+    margin-bottom: .5rem;
+    font-weight: 900;
+}
+
+.main-hero-article h2, .main-hero-article h3{
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 480px) {
+
+    .main-hero-text-container{
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .main-hero-article img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+}
+
+/* ABOUT ME INDEX HTML */
+
+.about-me-text-container{
+
+    display: flexbox;
+    width: 85%;
+    margin: 0 auto ;
+}
+
+.about-me-text-container-2{
+    display: flexbox;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.about-me-text-container img {
+    max-width: 250px;
+    margin-top: 8vh;
+}
+
+.about-me-text-container h1 {
+    font-stretch: 1%;
+    font-weight: 900;
+    line-height: 4.5vh;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 480px) {
+    .about-me-text-container{
+        display: flex;
+        width: 95%;
+        align-content: space-between;
+        gap: 5vw;
+        margin: 0 auto 6vh auto;
+    }
+
+    .about-me-text-container h1 {
+        margin-top: 8vh;
+    }
+
+    .about-me-text-container-sub {
+        margin: auto 0;
+        
+    }
+}
