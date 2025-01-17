@@ -76,6 +76,10 @@ nav a{
     padding-bottom: 3rem;
 }
 
+.hero-anchor {
+    text-decoration: none;
+}
+
 /* MAIN - SINGLE BLOGS SECTION */
 .small-screen-six-blogs {
     /* background-color: whitesmoke; */
